@@ -1,9 +1,11 @@
-
+import { Link } from "react-router-dom";
 
 const BeerListCard = ({beers: beer}) => {
 
   return (
-    <div key={beer._id} className="card mb-3" style={{maxWidth: '540px'}}>
+    
+    <Link key={beer._id} to={`/beers/${beer._id}`}>
+    <div  className="card mb-3" style={{maxWidth: '540px'}}>
       <div className="row no-gutters">
         <div className="col-md-4">
           <img style={{ width: '15%' }} src={beer.image_url} className="card-img" alt="" />
@@ -21,6 +23,7 @@ const BeerListCard = ({beers: beer}) => {
         </div>
       </div>
     </div>
+    </Link>
   );
 };
 
