@@ -28,9 +28,10 @@ const Home = () => {
             </p>
           </section>
           <section>
-
+            <Link to={"/random-beers"}>
               <img src={randomBeer} alt="beer" />
               <h1>Random Beer</h1>
+            </Link>
 
             <p>
               Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
@@ -41,9 +42,8 @@ const Home = () => {
             </p>
           </section>
           <section>
-
-              <img src={newBeer} alt="beer" />
-              <h1>New Beer</h1>
+            <img src={newBeer} alt="beer" />
+            <h1>New Beer</h1>
 
             <p>
               Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
